@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    top: 0;
+    left: 0;
+    padding: 0px 80px 5px 80px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    background-color: white;
+    z-index: 2;
+}
+
+#display{
+    display: none;
+}
+
+.display{
+    position: absolute;
+    right: 30px;
+    display: none;
+    font-size: 2.3rem;
+}
+
+.logo{
+    padding: 6px 0 0 0;
+}
+.logo img{
+    /* display: block; */
+    position: relative;
+    height: 50px;
+    /* left: 100px; */
+    margin-top: 8px;
+    float: left;
+    position: relative;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu li{
+    position: relative;
+    list-style: none;
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.menu li i{
+    text-align: center;
+    margin-left: 8px;
+    font-size: 0.8rem;
+    transition: all 0.7s;
+}
+
+.rotate{
+    rotate: 180deg;
+}
+.loginbtn{
+    /* margin-right: 80px; */
+    padding: 5px 15px;
+    background-color: #ce0000;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.1rem;
+    float: right;
+    position: relative;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    width: 80px;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-top: 10px;
+    transition: all 0.7s;
+}
+.dropdown::before {
+    content: "";
+    background-color: rgb(255, 177, 177);
+    position: absolute;
+    height: 95px;
+    width: 100px;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px;
+}
+.dropdown li{
+    float: left;
+    margin: 5px 0;
+    margin: 10px 0 0 10px ;
+}
+.drop1:hover .bx {
+    rotate: 180deg;
+}
+
+.show{
+    display: block;
+}
+
